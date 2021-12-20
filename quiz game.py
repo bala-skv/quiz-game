@@ -1,8 +1,11 @@
 #capitals of indian states quiz
 print('hello welcome to this quiz on capitals of states of india')
-rounds=int(input('how many rounds do you want to play? '))
+rounds=int(input('how many rounds do you want to play between 1 and 31 '))
 list_of_states=["Andhra Pradesh","Arunachal Pradesh ","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar Islands"]
 list_of_capitals=['amaravati','itanagar','dispur','patna','Raipur','panaji','gandhi nagar','chandigarh','shimla','srinagar','ranchi','bengaluru','trivandrum','bhopal','mumbai','imphal','Shillong','Aizawl','Kohima','bhubaneshwar','chandigarh','jaipur','Gangtok','chennai','hyderabad','agartala','lucknow','dehradun','kolkata','port blair']
+if rounds>=32:
+    print('ERROR you did not follow instructions')
+    quit()
 l2=list_of_capitals
 l1=list_of_states
 import random
